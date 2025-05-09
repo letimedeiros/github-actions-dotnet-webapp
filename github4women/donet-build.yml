@@ -1,0 +1,11 @@
+name: testando github actions
+
+on:
+  push:
+  jobs:
+    build:
+      runs-on: ubuntu-latest
+      steps:
+      - name: checkout do repositório
+        uses: actions/checkout@v2
+        run: echo "foi realizado o checkout do repositório"
