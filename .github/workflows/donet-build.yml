@@ -9,9 +9,6 @@ jobs:
       steps:
       - name: 'checkout do código'
         uses: actions/checkout@v2
-        
-      - name: Set up Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
+
+      - name: rodando script
         run: echo 'foi realizado o checkout do código'
